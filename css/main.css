@@ -19,16 +19,6 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
-
-body {
-  margin-top: 1rem;
-  font-size: 130%;
-  float: left;
-  position: relative;
-  left: 20%;
-  line-height: 1.5;
-}
-
 article {
   max-width: 43em;
 }
@@ -40,6 +30,7 @@ article h1 {
 article header {
   border-bottom: 1px solid #999;
   line-height: 1rem;
+  padding-bottom: 1rem;
 }
 
 article header p {
@@ -50,8 +41,8 @@ article > p:last-child {
   border-bottom: 1px solid #999;
 }
 
-article > p:first-child {
-  margin: 4em;
+article p {
+  padding-top: 1rem;
 }
 
 blockquote {
@@ -64,12 +55,56 @@ blockquote {
   color: #999;
 }
 
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 90em) {
 
   body {
-    font-size: 130%;
+    margin-top: 1rem;
+    font-size: 135%;
     float: left;
     position: relative;
     left: 20%;
     line-height: 1.5;
+  }
+
+  header h1 {
+    margin-bottom: 0;
+  }
+
+  header p {
+    padding-top: 0;
+    padding-bottom: 1rem;
+  }
+
+  article p {
+    padding-top: 1.5rem;
+  }
+}
+
+
+@media only screen and (min-width: 60em) {
+
+  body {
+    font-size: 120%;
+    float: left;
+    position: relative;
+    left: 10%;
+    line-height: 1.5;
+  }
+
+  header h1 {
+    margin-top: 2.125rem;
+    margin-bottom: 0;
+  }
+
+  header p {
+    margin-top: 0;
+  }
+
+  article p {
+    padding-top: .85rem;
+  }
+
+  blockquote {
+    font-size: 120%;
+  }
 }
